@@ -15,7 +15,6 @@
   <nav class="nav">
     <div class="nav-container">
       <a href="#" class="nav-logo">
-        <span class="logo-icon">📍</span>
         <span class="logo-text">GenbaKintai</span>
       </a>
       <div class="nav-links">
@@ -32,7 +31,7 @@
     <div class="hero-bg"></div>
     <div class="hero-container">
       <div class="hero-content">
-        <div class="hero-badge">🚀 事前登録受付中</div>
+        <p class="hero-badge">事前登録受付中</p>
         <h1 class="hero-title">
           現場に<span class="highlight">直行</span>、<br>
           勤怠は<span class="highlight">自動</span>。
@@ -50,9 +49,9 @@
           <a href="#contact" class="btn btn-primary">無料で事前登録</a>
           <a href="#features" class="btn btn-secondary">詳しく見る</a>
         </div>
-        <div class="hero-note">
-          ※ 10名まで月額固定。クレジットカード不要。
-        </div>
+        <p class="hero-note">
+          10名まで月額固定。クレジットカード不要。
+        </p>
       </div>
       <div class="hero-visual">
         <div class="phone-mockup">
@@ -69,7 +68,6 @@
               </div>
             </div>
             <button class="app-punch-btn">
-              <span class="punch-icon">👆</span>
               <span class="punch-text">上番打刻</span>
             </button>
             <div class="app-status">
@@ -85,11 +83,15 @@
           </div>
         </div>
         <div class="floating-card card-1">
-          <span class="card-icon">✓</span>
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
           <span>GPS位置確認済み</span>
         </div>
         <div class="floating-card card-2">
-          <span class="card-icon">📊</span>
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
+          </svg>
           <span>リアルタイム同期</span>
         </div>
       </div>
@@ -99,32 +101,24 @@
   <!-- 課題セクション -->
   <section class="problems">
     <div class="container">
-      <h2 class="section-title">こんな<span class="highlight">お悩み</span>ありませんか？</h2>
+      <h2 class="section-title">現場の勤怠管理、<span class="highlight">手間</span>がかかっていませんか</h2>
       <div class="problems-grid">
         <div class="problem-card">
-          <div class="problem-icon">📞</div>
-          <h3>電話報告が朝夕で殺到</h3>
-          <p>上番・下番の電話対応で管制業務がパンク。他の仕事が手につかない。</p>
+          <h3>電話報告の対応に追われる</h3>
+          <p>朝夕の上番・下番報告が殺到し、管制業務に集中できない。</p>
         </div>
         <div class="problem-card">
-          <div class="problem-icon">📝</div>
-          <h3>Excel管理が限界</h3>
-          <p>複数現場のシフト管理をExcelで。転記ミスや漏れが頻発。</p>
+          <h3>Excelでの管理が限界に</h3>
+          <p>複数現場のシフトをExcelで管理。転記ミスや更新漏れが頻発する。</p>
         </div>
         <div class="problem-card">
-          <div class="problem-icon">💸</div>
-          <h3>既存SaaSは高すぎる</h3>
-          <p>月額数万円〜の勤怠システム。中小規模には負担が大きい。</p>
+          <h3>既存システムは高額すぎる</h3>
+          <p>月額数万円の勤怠システム。中小規模の会社には負担が大きい。</p>
         </div>
         <div class="problem-card">
-          <div class="problem-icon">👴</div>
-          <h3>スタッフがITに不慣れ</h3>
-          <p>高齢のスタッフが多く、複雑なアプリは使いこなせない。</p>
+          <h3>現場スタッフがITに不慣れ</h3>
+          <p>年配のスタッフも多く、複雑なアプリは定着しない。</p>
         </div>
-      </div>
-      <div class="problems-solution">
-        <div class="arrow-down">↓</div>
-        <p class="solution-text"><strong>GenbaKintai</strong>なら、すべて解決。</p>
       </div>
     </div>
   </section>
@@ -132,40 +126,36 @@
   <!-- 機能セクション -->
   <section id="features" class="features">
     <div class="container">
-      <h2 class="section-title">3つの<span class="highlight">コア機能</span></h2>
-      <p class="section-subtitle">必要な機能だけ。シンプルだから、誰でも使える。</p>
+      <h2 class="section-title">必要な機能を、<span class="highlight">シンプル</span>に</h2>
+      <p class="section-subtitle">余計な機能は省き、現場で本当に使える機能だけを厳選しました。</p>
       
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-number">01</div>
-          <div class="feature-icon">📍</div>
           <h3>GPS打刻</h3>
-          <p>スマホで打刻するだけ。現場の位置情報を自動記録。不正打刻を防止し、管理者はリアルタイムで把握。</p>
+          <p>スマホで打刻するだけ。現場の位置情報を自動で記録します。管理者はリアルタイムで出勤状況を把握できます。</p>
           <ul class="feature-list">
-            <li>ワンタップで上番/下番</li>
+            <li>ワンタップで上番・下番</li>
             <li>位置情報の自動記録</li>
             <li>打刻漏れアラート</li>
           </ul>
         </div>
         
         <div class="feature-card featured">
-          <div class="feature-badge">人気</div>
           <div class="feature-number">02</div>
-          <div class="feature-icon">📅</div>
           <h3>現場別シフト管理</h3>
-          <p>複数現場の配置をカレンダーで一覧管理。ドラッグ&ドロップで簡単編集。人員過不足が一目でわかる。</p>
+          <p>複数現場の配置をカレンダーで一覧管理。ドラッグ&ドロップで直感的に編集できます。</p>
           <ul class="feature-list">
             <li>現場×日付のマトリクス表示</li>
-            <li>スタッフの希望シフト収集</li>
-            <li>シフト確定の自動通知</li>
+            <li>希望シフトの収集</li>
+            <li>確定通知の自動送信</li>
           </ul>
         </div>
         
         <div class="feature-card">
           <div class="feature-number">03</div>
-          <div class="feature-icon">📊</div>
-          <h3>リアルタイム管理</h3>
-          <p>ダッシュボードで全現場の状況を把握。欠勤・遅刻を即座に検知。迅速なリカバリー対応が可能に。</p>
+          <h3>リアルタイム管理画面</h3>
+          <p>ダッシュボードで全現場の状況を一目で把握。欠勤や遅刻を即座に検知できます。</p>
           <ul class="feature-list">
             <li>出勤状況の一覧表示</li>
             <li>異常時のプッシュ通知</li>
@@ -179,27 +169,23 @@
   <!-- 対象業種 -->
   <section class="industries">
     <div class="container">
-      <h2 class="section-title">こんな<span class="highlight">業種</span>に最適</h2>
+      <h2 class="section-title">直行直帰のある<span class="highlight">業種</span>に</h2>
       <div class="industries-grid">
         <div class="industry-card">
-          <div class="industry-icon">🛡️</div>
           <h3>警備業</h3>
-          <p>上番/下番報告、現場配置、日報管理を一元化</p>
+          <p>上番・下番報告と現場配置を一元管理</p>
         </div>
         <div class="industry-card">
-          <div class="industry-icon">🏥</div>
           <h3>訪問介護・看護</h3>
-          <p>利用者宅への訪問記録、直行直帰の勤怠管理</p>
+          <p>利用者宅への訪問記録と直行直帰の勤怠管理</p>
         </div>
         <div class="industry-card">
-          <div class="industry-icon">🧹</div>
           <h3>清掃・ビルメンテ</h3>
-          <p>複数ビルの巡回管理、作業時間の記録</p>
+          <p>複数ビルの巡回管理と作業時間の記録</p>
         </div>
         <div class="industry-card">
-          <div class="industry-icon">🚚</div>
           <h3>配送・物流</h3>
-          <p>配送拠点での打刻、ルート別の時間管理</p>
+          <p>配送拠点での打刻とルート別の時間管理</p>
         </div>
       </div>
     </div>
@@ -208,8 +194,8 @@
   <!-- 料金セクション -->
   <section id="pricing" class="pricing">
     <div class="container">
-      <h2 class="section-title">シンプルな<span class="highlight">料金プラン</span></h2>
-      <p class="section-subtitle">初期費用0円。使った分だけ。</p>
+      <h2 class="section-title"><span class="highlight">料金</span>プラン</h2>
+      <p class="section-subtitle">初期費用0円。必要な分だけ。</p>
       
       <div class="pricing-grid">
         <div class="pricing-card">
@@ -221,10 +207,10 @@
             <span class="price-period">/月</span>
           </div>
           <ul class="pricing-features">
-            <li>✓ GPS打刻</li>
-            <li>✓ 基本シフト管理</li>
-            <li>✓ 管理ダッシュボード</li>
-            <li>✓ メールサポート</li>
+            <li>GPS打刻</li>
+            <li>基本シフト管理</li>
+            <li>管理ダッシュボード</li>
+            <li>メールサポート</li>
             <li class="disabled">AIシフト提案</li>
             <li class="disabled">API連携</li>
           </ul>
@@ -241,11 +227,11 @@
             <span class="price-period">/人・月</span>
           </div>
           <ul class="pricing-features">
-            <li>✓ GPS打刻</li>
-            <li>✓ 基本シフト管理</li>
-            <li>✓ 管理ダッシュボード</li>
-            <li>✓ 優先サポート</li>
-            <li>✓ AIシフト提案</li>
+            <li>GPS打刻</li>
+            <li>基本シフト管理</li>
+            <li>管理ダッシュボード</li>
+            <li>優先サポート</li>
+            <li>AIシフト提案</li>
             <li class="disabled">API連携</li>
           </ul>
           <a href="#contact" class="btn btn-primary">事前登録する</a>
@@ -260,20 +246,19 @@
             <span class="price-period">/人・月</span>
           </div>
           <ul class="pricing-features">
-            <li>✓ GPS打刻</li>
-            <li>✓ 基本シフト管理</li>
-            <li>✓ 管理ダッシュボード</li>
-            <li>✓ 専任サポート</li>
-            <li>✓ AIシフト提案</li>
-            <li>✓ API連携・カスタム</li>
+            <li>GPS打刻</li>
+            <li>基本シフト管理</li>
+            <li>管理ダッシュボード</li>
+            <li>専任サポート</li>
+            <li>AIシフト提案</li>
+            <li>API連携・カスタム</li>
           </ul>
           <a href="#contact" class="btn btn-outline">お問い合わせ</a>
         </div>
       </div>
       
       <div class="pricing-note">
-        <p>※ すべてのプランに14日間の無料トライアルが含まれます</p>
-        <p>※ 年払いで2ヶ月分お得</p>
+        <p>すべてのプランに14日間の無料トライアルが含まれます。年払いで2ヶ月分お得。</p>
       </div>
     </div>
   </section>
@@ -282,7 +267,7 @@
   <section id="flow" class="flow">
     <div class="container">
       <h2 class="section-title">導入の<span class="highlight">流れ</span></h2>
-      <p class="section-subtitle">最短3日でスタート</p>
+      <p class="section-subtitle">最短3日で運用開始</p>
       
       <div class="flow-timeline">
         <div class="flow-step">
@@ -310,7 +295,7 @@
           <div class="step-number">4</div>
           <div class="step-content">
             <h3>本番導入</h3>
-            <p>スタッフへの説明会実施。スムーズに運用開始。</p>
+            <p>スタッフへの説明会を実施し、運用を開始します。</p>
           </div>
         </div>
       </div>
@@ -324,23 +309,23 @@
       
       <div class="faq-list">
         <details class="faq-item">
-          <summary>スマートフォンを持っていないスタッフがいますが、利用できますか？</summary>
-          <p>はい、可能です。現場リーダーによる代理打刻機能があり、スマホを持っていないスタッフの分もまとめて打刻できます。また、ガラケー用のシンプルな電話打刻オプションも準備中です。</p>
+          <summary>スマートフォンを持っていないスタッフがいます</summary>
+          <p>現場リーダーによる代理打刻機能があり、スマホを持っていないスタッフの分もまとめて打刻できます。また、ガラケー用の電話打刻オプションも準備中です。</p>
         </details>
         <details class="faq-item">
-          <summary>既存の給与計算ソフトと連携できますか？</summary>
-          <p>主要な給与計算ソフト（弥生給与、マネーフォワード、freeeなど）へのCSVエクスポートに対応しています。プレミアムプランではAPI連携も可能です。</p>
+          <summary>既存の給与計算ソフトと連携できますか</summary>
+          <p>弥生給与、マネーフォワード、freeeなど主要な給与計算ソフトへのCSVエクスポートに対応しています。プレミアムプランではAPI連携も可能です。</p>
         </details>
         <details class="faq-item">
-          <summary>データのセキュリティは大丈夫ですか？</summary>
-          <p>AWSのセキュアなクラウド環境で運用しており、通信はすべてSSL暗号化。データは日本国内のサーバーで管理しています。</p>
+          <summary>データのセキュリティは大丈夫ですか</summary>
+          <p>AWSのセキュアなクラウド環境で運用しており、通信はすべてSSL暗号化されています。データは日本国内のサーバーで管理しています。</p>
         </details>
         <details class="faq-item">
-          <summary>契約期間の縛りはありますか？</summary>
+          <summary>契約期間の縛りはありますか</summary>
           <p>月払いの場合、最低契約期間はありません。いつでも解約可能です。年払いの場合は1年契約となりますが、2ヶ月分お得になります。</p>
         </details>
         <details class="faq-item">
-          <summary>サポート体制はどうなっていますか？</summary>
+          <summary>サポート体制について教えてください</summary>
           <p>メールサポートは全プランで利用可能です。スタンダード以上は優先対応、プレミアムは専任担当者がつきます。導入時のオンライン説明会も無料で実施します。</p>
         </details>
       </div>
@@ -352,12 +337,12 @@
     <div class="container">
       <div class="contact-inner">
         <div class="contact-content">
-          <h2>まずは<span class="highlight">無料で</span>お試しください</h2>
-          <p>14日間のトライアルで、すべての機能をご体験いただけます。<br>クレジットカード登録不要。お気軽にお問い合わせください。</p>
+          <h2>まずは無料でお試しください</h2>
+          <p>14日間のトライアルで、すべての機能をご体験いただけます。<br>クレジットカード登録不要。</p>
           <ul class="contact-benefits">
-            <li>✓ 14日間無料トライアル</li>
-            <li>✓ 初期費用0円</li>
-            <li>✓ 導入サポート無料</li>
+            <li>14日間無料トライアル</li>
+            <li>初期費用0円</li>
+            <li>導入サポート無料</li>
           </ul>
         </div>
         <div class="contact-form">
@@ -405,7 +390,7 @@
               <textarea id="message" name="message" rows="3" placeholder="現在お使いのシステムや、課題などあればご記入ください"></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-full">無料で事前登録する</button>
-            <p class="form-note">※ ご登録いただいた情報は、サービス案内以外の目的には使用いたしません。</p>
+            <p class="form-note">ご登録いただいた情報は、サービス案内以外の目的には使用いたしません。</p>
           </form>
         </div>
       </div>
@@ -418,7 +403,6 @@
       <div class="footer-content">
         <div class="footer-brand">
           <div class="footer-logo">
-            <span class="logo-icon">📍</span>
             <span class="logo-text">GenbaKintai</span>
           </div>
           <p>現場直行型の勤怠管理システム</p>
