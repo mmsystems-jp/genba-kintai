@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenbaKintai スタッフ向けガイド</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 11pt;
+      line-height: 1.6;
+      color: #1e293b;
+      background: white;
+      padding: 20px;
+      max-width: 210mm;
+      margin: 0 auto;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 3px solid #1e40af;
+    }
+    
+    .header h1 {
+      font-size: 22pt;
+      font-weight: 900;
+      color: #1e40af;
+      margin-bottom: 5px;
+    }
+    
+    .header p {
+      font-size: 12pt;
+      color: #64748b;
+    }
+    
+    .section {
+      margin-bottom: 20px;
+    }
+    
+    .section-title {
+      font-size: 14pt;
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      border-left: 4px solid #f97316;
+    }
+    
+    .steps {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .step {
+      flex: 1;
+      min-width: 200px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: #1e40af;
+      color: white;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 14pt;
+      margin-bottom: 8px;
+    }
+    
+    .step h3 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 5px;
+    }
+    
+    .step p {
+      font-size: 10pt;
+      color: #64748b;
+    }
+    
+    .punch-section {
+      background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+      color: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .punch-section h2 {
+      font-size: 14pt;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    
+    .punch-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    
+    .punch-item {
+      text-align: center;
+      flex: 1;
+      max-width: 180px;
+    }
+    
+    .punch-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      background: #f97316;
+      border-radius: 50%;
+      color: white;
+      font-weight: 700;
+      font-size: 11pt;
+      margin-bottom: 8px;
+      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
+    }
+    
+    .punch-item p {
+      font-size: 10pt;
+      opacity: 0.9;
+    }
+    
+    .important {
+      background: #fef3c7;
+      border: 1px solid #f59e0b;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .important h3 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #92400e;
+      margin-bottom: 8px;
+    }
+    
+    .important ul {
+      margin-left: 20px;
+      font-size: 10pt;
+      color: #78350f;
+    }
+    
+    .important li {
+      margin-bottom: 3px;
+    }
+    
+    .install-section {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .install-box {
+      flex: 1;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    
+    .install-box h3 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .install-box ol {
+      margin-left: 20px;
+      font-size: 10pt;
+      color: #475569;
+    }
+    
+    .install-box li {
+      margin-bottom: 5px;
+    }
+    
+    .footer {
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #e2e8f0;
+      text-align: center;
+      font-size: 9pt;
+      color: #94a3b8;
+    }
+    
+    .qr-placeholder {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background: #e2e8f0;
+      border-radius: 4px;
+      margin-bottom: 5px;
+    }
+    
+    .contact {
+      background: #f1f5f9;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+      font-size: 10pt;
+    }
+    
+    .contact strong {
+      color: #1e40af;
+    }
+    
+    @media print {
+      body {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>GenbaKintai 使い方ガイド</h1>
+    <p>現場スタッフ向け｜打刻の方法</p>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">はじめに（初回のみ）</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>LINEでログイン</h3>
+        <p>届いたURLをタップして「LINEでログイン」を押す</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>許可する</h3>
+        <p>LINE画面で「許可する」をタップ</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>ホーム画面に追加</h3>
+        <p>下の「インストール方法」を参照</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="punch-section">
+    <h2>打刻の方法</h2>
+    <div class="punch-grid">
+      <div class="punch-item">
+        <div class="punch-button">上番</div>
+        <p>現場に着いたら<br>「上番打刻」をタップ</p>
+      </div>
+      <div class="punch-item">
+        <div class="punch-button">下番</div>
+        <p>勤務が終わったら<br>「下番打刻」をタップ</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="important">
+    <h3>⚠ 注意事項</h3>
+    <ul>
+      <li><strong>位置情報を「許可」してください</strong>（初回のみ確認が出ます）</li>
+      <li>現場の近くで打刻してください（離れすぎるとエラーになります）</li>
+      <li>打刻を忘れた場合は、管理者に連絡してください</li>
+      <li>インターネット接続が必要です（Wi-Fi または モバイルデータ）</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">ホーム画面への追加（インストール）</h2>
+    <div class="install-section">
+      <div class="install-box">
+        <h3>📱 iPhone の場合</h3>
+        <ol>
+          <li><strong>Safari</strong>でGenbaKintaiを開く</li>
+          <li>画面下の <strong>共有ボタン</strong>（□↑）をタップ</li>
+          <li>「<strong>ホーム画面に追加</strong>」をタップ</li>
+          <li>「追加」をタップ</li>
+        </ol>
+      </div>
+      <div class="install-box">
+        <h3>📱 Android の場合</h3>
+        <ol>
+          <li><strong>Chrome</strong>でGenbaKintaiを開く</li>
+          <li>右上の <strong>︙</strong>（メニュー）をタップ</li>
+          <li>「<strong>ホーム画面に追加</strong>」をタップ</li>
+          <li>「追加」をタップ</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    使い方がわからない場合は、管理者または <strong>mmsystems.work@gmail.com</strong> までご連絡ください
+  </div>
+
+  <div class="footer">
+    GenbaKintai｜MMシステム｜このガイドは印刷して現場に掲示できます
+  </div>
+</body>
+</html>
